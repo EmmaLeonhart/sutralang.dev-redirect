@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://sutra.emmaleonhart.com/">
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://sutra.emmaleonhart.com/">
 <title>Redirecting…</title>
-<script>window.location.replace("https://sutra.emmaleonhart.com/");</script>
+<script>
+(function () {
+  var base = "https://sutra.emmaleonhart.com";
+  var dest = base + window.location.pathname + window.location.search + window.location.hash;
+  window.location.replace(dest);
+})();
+</script>
 </head>
 <body>
-<p>Redirecting to <a href="https://sutra.emmaleonhart.com/">https://sutra.emmaleonhart.com/</a>…</p>
+<p>Redirecting… If you are not redirected automatically,
+<a id="go" href="https://sutra.emmaleonhart.com/">click here</a>.</p>
+<script>
+document.getElementById("go").href =
+  "https://sutra.emmaleonhart.com" + window.location.pathname + window.location.search + window.location.hash;
+</script>
 </body>
 </html>
